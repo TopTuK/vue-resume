@@ -1,0 +1,15 @@
+AOS LIbrary
+- https://dev.to/sabbirsobhani/aos-scrolling-animation-with-vuejs-3-4hp7
+- https://egghead.io/blog/how-to-use-the-animate-on-scroll-aos-library-in-vue
+
+Bootstrap
+https://stackoverflow.com/questions/65547199/using-bootstrap-5-with-vue-3
+
+Boxicons
+https://www.npmjs.com/package/boxicons
+
+glightbox
+https://www.npmjs.com/package/glightbox
+
+swiper
+https://swiperjs.com/vue
