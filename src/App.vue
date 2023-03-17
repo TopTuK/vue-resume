@@ -1,8 +1,7 @@
 <script setup>
+import MainLayout from '@/layout/MainLayout.vue';
 </script>
 
 <template>
-  <div>
-    Hello to vue-resume
-  </div>
+  <MainLayout />
 </template>
