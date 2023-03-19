@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import router from '@/router/index.js'
 
 // import main css file globally
 import '@/assets/css/style.css'
@@ -8,8 +9,10 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 // import Bootstrap 5
-import "bootstrap/dist/css/bootstrap.min.css"
-import "bootstrap"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap'
+// import bootstrap-icons
+import 'bootstrap-icons/font/bootstrap-icons.css'
 
 // import boxicons
 import 'boxicons'
@@ -33,6 +36,8 @@ const app = createApp(App)
 
 // Register MainLayout as global component
 app.component(MainLayout)
+
+app.use(router)
 
 // Mount app
 app.mount('#app')

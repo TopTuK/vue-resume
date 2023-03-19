@@ -1,7 +1,5 @@
 <script setup>
 import Header from '@/components/Header.vue';
-import Hero from '@/components/Hero.vue'
-import About from '@/components/About.vue'
 </script>
 
 <template>
@@ -9,8 +7,5 @@ import About from '@/components/About.vue'
     <Header />
     <!-- ### HEADER ### -->
 
-    <!-- ### HERO Section ### -->
-    <Hero />
-    <!-- ### HERO Section ### -->
-
+    <slot />
 </template>
