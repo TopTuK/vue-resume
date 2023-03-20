@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
+
+import { createI18n } from 'vue-i18n'
+import messages  from '@/models/messages'
+
 import router from '@/router/index.js'
 
 // import main css file globally
@@ -31,13 +35,24 @@ import App from './App.vue'
 // Init AOS
 Aos.init();
 
+// create I18n 
+const i18n = createI18n({
+    locale: 'ru',
+    fallbackLocale: 'en',
+    messages,
+})
+
 // Create app
 const app = createApp(App)
 
 // Register MainLayout as global component
 app.component(MainLayout)
 
+// use router
 app.use(router)
+
+// use I18n
+app.use(i18n)
 
 // Mount app
 app.mount('#app')
