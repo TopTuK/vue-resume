@@ -1,3 +1,11 @@
+<template>
+    <li>
+        <router-link :to="item.path" class="nav-link scrollto" :class="activeClass">
+            <i class="bx" :class="item.iconClass"></i> <span>{{ $t('menu.' + item.title) }}</span>
+        </router-link>
+    </li>
+</template>
+
 <script setup>
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
@@ -16,11 +24,3 @@ const activeClass = computed(() => {
         : '';
 });
 </script>
-
-<template>
-    <li>
-        <router-link :to="item.path" class="nav-link scrollto" :class="activeClass">
-            <i class="bx" :class="item.iconClass"></i> <span>{{ item.title }}</span>
-        </router-link>
-    </li>
-</template>

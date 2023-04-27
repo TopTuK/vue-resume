@@ -1,11 +1,8 @@
 <script setup>
-import Header from '@/components/Header.vue';
+import MainMenu from '@/components/Menu/MainMenu.vue';
 </script>
 
 <template>
-    <!-- ### HEADER ### -->
-    <Header />
-    <!-- ### HEADER ### -->
-
+    <MainMenu />
     <slot />
 </template>

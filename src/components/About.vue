@@ -5,8 +5,8 @@
     <section id="about" class="about">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
-                <h2>About</h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <h2>{{ $t('about.title') }}</h2>
+                <p>{{ $t('about.description') }}</p>
             </div>
 
             <div class="row">
@@ -15,35 +15,32 @@
                 </div>
 
                 <div class="col-lg-8 pt-4 pt-lg-0 content">
-                    <h3>Project manager &amp; Full stack developer</h3>
+                    <h3>{{ $t('about.profession') }}</h3>
 
                     <p class="fst-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
+                        {{ $t('about.profession_desccription') }}
                     </p>
 
                     <div class="row">
                         <div class="col-lg-6">
                             <ul>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>2 Jul 1988</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://pmi.moscow</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Moscow, Russia</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>{{ $t('about.birthday_titie') }}</strong> <span>{{ $t('about.birthday_date') }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>{{ $t('about.phone_title') }}</strong> <span>{{ $t('common.phone_number') }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>{{ $t('about.website_title') }}</strong> <span>{{ $t('common.website') }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>{{ $t('about.city_title') }}</strong> <span>{{ $t('about.city') }}</span></li>
                             </ul>
                         </div>
                         <div class="col-lg-6">
                             <ul>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>35</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>sergey.sidorov@pmi.moscow</span></li>
-                                <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>{{ $t('about.age_title') }}</strong> <span>{{ $t('common.age') }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>{{ $t('about.degree_title') }}</strong> <span>{{ $t('about.degree') }}</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>{{ $t('about.email_title') }}</strong> <span>{{ $t('common.email') }}</span></li>
                             </ul>
                         </div>
                     </div>
 
                     <p>
-                        Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                        Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                        {{ $t('about.talants') }}
                     </p>
                 </div>
             </div>

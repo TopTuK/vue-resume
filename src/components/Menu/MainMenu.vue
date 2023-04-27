@@ -1,8 +1,3 @@
-<script setup>
-import mainMenu from '@/models/mainMenu.js';
-import MenuItem from '@/components/MenuItem.vue';
-</script>
-
 <template>
     <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
 
@@ -18,3 +13,8 @@ import MenuItem from '@/components/MenuItem.vue';
         </nav>
     </header>
 </template>
+
+<script setup>
+import mainMenu from "@/models/mainMenu";
+import MenuItem from '@/components/Menu/MenuItem.vue';
+</script>

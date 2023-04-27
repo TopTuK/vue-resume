@@ -2,26 +2,26 @@ export default [
     {
         path: '/',
         iconClass: 'bx-home',
-        title: 'Home',
+        title: 'home',
     },
     {
         path:'/about',
         iconClass: 'bx-user',
-        title: 'About',
+        title: 'about',
     },
     {
         path:'/resume',
         iconClass: 'bx-file-blank',
-        title: 'Resume',
+        title: 'resume',
     },
     {
         path:'/services',
         iconClass: 'bx-server',
-        title: 'Services',
+        title: 'services',
     },
     {
         path:'/contacts',
         iconClass: 'bx-envelope',
-        title: 'Contacts',
+        title: 'contacts',
     },
 ];
