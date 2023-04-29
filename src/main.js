@@ -33,15 +33,15 @@ const i18n = createI18n({
     locale: 'ru',
     fallbackLocale: 'en',
     messages, // import messages
-})
+});
 
 // Create app
-const app = createApp(App)
+const app = createApp(App);
 
 // use router
-app.use(router)
+app.use(router);
 // use I18n
-app.use(i18n)
+app.use(i18n);
 
 // Mount app
-app.mount('#app')
+app.mount('#app');

@@ -40,7 +40,7 @@
                     </div>
 
                     <p>
-                        {{ $t('about.talants') }}
+                        {{ $t('about.talents') }}
                     </p>
                 </div>
             </div>

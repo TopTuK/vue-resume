@@ -11,7 +11,7 @@ a {
     color: #0563bb;
     text-decoration: none;
 }
-  
+
 a:hover {
     color: #067ded;
     text-decoration: none;
@@ -508,6 +508,24 @@ section {
     height: 10px;
     transition: 0.9s;
     background-color: #0563bb;
+}
+
+/*--------------------------------------------------------------
+### Talents ###
+--------------------------------------------------------------*/
+.talents .talents-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #45505b;
+}
+
+.talents .talents-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0563bb;
+    position: relative;
 }
 
 /*--------------------------------------------------------------

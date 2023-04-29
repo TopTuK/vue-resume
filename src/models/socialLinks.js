@@ -1,21 +1,16 @@
 export default [
     {
-        link: '',
+        link: 'https://www.linkedin.com/in/pmsergey/',
         class: 'linkedin',
         iconClass: 'bxl-linkedin',
     },
     {
-        link: '',
-        class: 'twitter',
-        iconClass: 'bxl-twitter',
-    },
-    {
-        link: '',
+        link: 'https://www.facebook.com/sergey.sidorov.88',
         class: 'facebook',
         iconClass: 'bxl-facebook',
     },
     {
-        link: '',
+        link: 'https://www.instagram.com/cydoor/',
         class: 'instagram',
         iconClass: 'bxl-instagram',
     },

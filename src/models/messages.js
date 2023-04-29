@@ -11,6 +11,7 @@ const messages = {
         menu: {
             home: 'Home',
             about: 'About',
+            talents: 'Talents',
             resume: 'Resume',
             services: 'Services',
             contacts: 'Contact',
@@ -39,13 +40,32 @@ const messages = {
             degree_title: 'Degree:',
             degree: 'Master',
             email_title: 'Email:',
-            talants: 'I have classic project management talents and rich experience in scope management in developing unique products under conditions of high uncertainty and finiteness.'
+            talents: 'I have classic project management talents and rich experience in scope management in developing unique products under conditions of high uncertainty and finiteness.'
+        },
+        talents: {
+            title: 'Talents',
+            description: 'Talented specialist is talented in everything',
+        },
+        services: {
+            title: 'MY PET SERVICES',
+            description: 'I develop pet projects for myself',
+            pmi_club_title: 'PMI Club',
+            pmi_club_description: 'The club is a community of people and for people. We combine, accumulate and cherish the personal experience of everyone.',
+            docker_mailserver_title: 'Docker mailserver',
+            docker_mailserver_description: 'Docker Mailserver is a fork of Jeboehm Docker Mailserver project. Docker Mailserver is great project to server producttion mail server on your host! It\'s based on the famous ISPMail guide and all images based on Alpine Linux.',
+            vue_resume_title: 'Vue Resume',
+            vue_resume_description: 'Build fast 🚀 and easy beautiful personal site with CV!',
+            pytfsclient_title: 'PyTfsClient',
+            pytfsclient_description: 'Microsoft Team Foundation Server Python Library is a Microsoft TFS API Python client that can work with Microsoft TFS.',
+            nettfsclient_title: 'NetTfsClient',
+            nettfsclient_description: 'Microsoft Team Foundation Server .Net Library is a client for Azure service. It can manage workitems, projects and team members.',
         },
     },
     ru: {
         menu: {
             home: 'Главная',
             about: 'Обо мне',
+            talents: 'Таланты',
             resume: 'Резюме',
             services: 'Проекты',
             contacts: 'Контакты',
@@ -73,7 +93,25 @@ const messages = {
             degree_title: 'Образование:',
             degree: 'Высшее, специалист',
             email_title: 'Почта:',
-            talants: 'Обладаю классическими талантами руководителя проектами и богатым опытом в области управления содержанием работ при разработке уникальных продуктов в условиях сильной неопределенности и конечности.'
+            talents: 'Обладаю классическими талантами руководителя проектами и богатым опытом в области управления содержанием работ при разработке уникальных продуктов в условиях сильной неопределенности и конечности.'
+        },
+        talents: {
+            title: 'Таланты',
+            description: 'Талантливый специалист - талантлив во всем',
+        },
+        services: {
+            title: 'МОИ ДОМАШНИЕ ПРОЕКТЫ',
+            description: 'Разрабатываю проекты для души',
+            pmi_club_title: 'PMI Club',
+            pmi_club_description: 'Клуб — это коммьюнити людей и для людей. Мы объединяем, аккумулируем и бережем личный опыт каждого.',
+            docker_mailserver_title: 'Почтовый сервер (Docker)',
+            docker_mailserver_description: 'Docker Mailserver — это форк проекта Jeboehm Docker Mailserver. Отличный проект для создания почтового сервера на вашем хосте!',
+            vue_resume_title: 'Vue Resume',
+            vue_resume_description: 'Создайте свой персональный сайт с отличным резюме 🚀',
+            pytfsclient_title: 'PyTfsClient',
+            pytfsclient_description: 'Python библиотека для взаимодействия с Azure/TFS сервисом',
+            nettfsclient_title: 'NetTfsClient',
+            nettfsclient_description: '.Net (Core) клиент для взаимодейтсвия с Azure/TFS сервисом',
         },
     },
 };

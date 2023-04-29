@@ -10,6 +10,11 @@ export default [
         title: 'about',
     },
     {
+        path:'/talents',
+        iconClass: 'bx-extension',
+        title: 'talents',
+    },
+    {
         path:'/resume',
         iconClass: 'bx-file-blank',
         title: 'resume',
