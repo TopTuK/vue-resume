@@ -1,5 +1,5 @@
 <template>
-    <section id="resume" class="resume">
+    <section id="resume" class="main resume">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -66,64 +66,61 @@
 </template>
 
 <style scoped>
-/*--------------------------------------------------------------
-### Resume ###
---------------------------------------------------------------*/
 .resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #45505b;
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
 }
-  
+
 .resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid #0563bb;
-    position: relative;
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
 }
 
 .resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color: #0563bb;
-    margin-bottom: 10px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
-    font-size: 16px;
-    background: #f7f8f9;
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .resume .resume-item ul {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .resume .resume-item ul li {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .resume .resume-item:last-child {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .resume .resume-item::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -9px;
-    top: 0;
-    background: #fff;
-    border: 2px solid #0563bb;
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
 }
 </style>

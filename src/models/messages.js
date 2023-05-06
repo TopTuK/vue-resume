@@ -3,6 +3,7 @@
 const messages = {
     en: {
         common: {
+            name: "Sergey Sidorov",
             phone_number: '+7 916 4857574',
             website: 'https://pmi.moscow',
             email: 'sergey.sidorov@pmi.moscow',
@@ -65,6 +66,7 @@ const messages = {
     },
     ru: {
         menu: {
+            name: "Сергей Сидоров",
             home: 'Главная',
             about: 'Обо мне',
             talents: 'Таланты',
@@ -75,7 +77,7 @@ const messages = {
         hero: {
             name: 'Сергей Сидоров',
             me: 'Я - ',
-            project: 'Руководитель проектами',
+            project: 'Руководитель проектов',
             product: 'Менеджер продукта',
             analyst: 'Системный аналитик',
             developer: 'Разработчик',

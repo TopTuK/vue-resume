@@ -1,8 +1,8 @@
-<script setup>
-import MainMenu from '@/components/Menu/MainMenu.vue';
-</script>
-
 <template>
-    <MainMenu />
+    <MenuHeader />
     <slot />
 </template>
+
+<script setup>
+import MenuHeader from '@/components/MenuHeader.vue';
+</script>

@@ -13,3 +13,9 @@ https://www.npmjs.com/package/glightbox
 
 swiper
 https://swiperjs.com/vue
+
+VUestic UI for VUE
+https://ui.vuestic.dev/en/ui-elements/badge
+
+iPortfolio template
+https://bootstrapmade.com/demo/iPortfolio/

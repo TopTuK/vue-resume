@@ -2,19 +2,20 @@
 </script>
 
 <template>
-    <section id="about" class="about">
+    <section id="about" class="main about">
         <div class="container" data-aos="fade-up">
+
             <div class="section-title">
                 <h2>{{ $t('about.title') }}</h2>
                 <p>{{ $t('about.description') }}</p>
             </div>
 
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-right">
                     <img src="@/assets/images/profile.jpg" class="img-fluid" alt="">
                 </div>
 
-                <div class="col-lg-8 pt-4 pt-lg-0 content">
+                <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                     <h3>{{ $t('about.profession') }}</h3>
 
                     <p class="fst-italic">
@@ -52,9 +53,9 @@
 .about .content h3 {
     font-weight: 700;
     font-size: 26px;
-    color: #728394;
+    color: #173b6c;
 }
-  
+
 .about .content ul {
     list-style: none;
     padding: 0;
@@ -73,7 +74,7 @@
 .about .content ul i {
     font-size: 16px;
     margin-right: 5px;
-    color: #0563bb;
+    color: #149ddd;
     line-height: 0;
 }
 
