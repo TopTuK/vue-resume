@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
+import { createVuestic } from 'vuestic-ui'
+
 import messages  from '@/models/messages'
 import router from '@/router/index.js'
 
@@ -21,6 +23,8 @@ import 'boxicons/css/boxicons.min.css'
 import 'glightbox'
 // import swiper
 import 'swiper/css'
+// import vuestic css
+import "vuestic-ui/css";
 
 import App from './App.vue'
 
@@ -42,6 +46,8 @@ const app = createApp(App);
 app.use(router);
 // use I18n
 app.use(i18n);
+// use vuestic
+app.use(createVuestic());
 
 // Mount app
 app.mount('#app');

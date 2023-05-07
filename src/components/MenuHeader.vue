@@ -1,18 +1,55 @@
 <template>
     <!-- ======= Mobile nav toggle button ======= -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <i 
+        class="bi bi-list mobile-nav-toggle d-xl-none"
+        @click="menuClick"
+    />
 
-    <header id="header">
+    <header id="header" :style="menuVisible">
         <div class="d-flex flex-column">
             <Profile />
             <MainMenu />
+
+            <div class="mt-3 align-self-center">
+                <va-button-toggle
+                    v-model="lang"
+                    preset="secondary"
+                    border-color="primary"
+                    :options="[
+                        { label: 'RU', value: 'ru' },
+                        { label: 'EN', value: 'en' },
+                    ]"
+                />
+            </div>
         </div>
     </header>
 </template>
 
 <script setup>
+import { ref, computed, watch } from 'vue';
+import { useI18n } from 'vue-i18n';
 import Profile from '@/components/Menu/Profile.vue';
 import MainMenu from '@/components/Menu/MainMenu.vue';
+
+const isMenuVisible = ref(false);
+const menuVisible = computed(() => {
+    const res = isMenuVisible.value ? 'overflow: hidden; left: 0;' : '';
+    return res;
+});
+
+const menuClick = (event) => {
+    isMenuVisible.value = !isMenuVisible.value;
+
+    event.target.classList.toggle('bi-list')
+    event.target.classList.toggle('bi-x')
+};
+
+const i18n = useI18n();
+const lang = ref(i18n.locale);
+
+watch(lang, () => {
+    i18n.locale = lang.value;
+});
 </script>
 
 <style scoped>

@@ -10,13 +10,15 @@
 
 <script setup>
 import Typed from 'typed.js'
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 // https://github.com/Orlandster/vue-typed-js/issues/41
 const typing = ref(null);
+const typd = ref(null);
 
 const i18n = useI18n();
+
 const typingMessages = [
     i18n.t('hero.project'),
     i18n.t('hero.product'),
@@ -25,7 +27,7 @@ const typingMessages = [
 ];
 
 onMounted(() => {
-    new Typed(
+    typd.value = new Typed(
         typing.value, {
             strings: typingMessages,
             typeSpeed: 80,
@@ -33,6 +35,31 @@ onMounted(() => {
             loop: true
         }
     )
+});
+
+const locale = ref(i18n.locale);
+
+watch(locale, () => {
+    if (typd.value != null)
+    {
+        typd.value.destroy();
+
+        const msgs = [
+            i18n.t('hero.project'),
+            i18n.t('hero.product'),
+            i18n.t('hero.analyst'),
+            i18n.t('hero.developer'),
+        ];
+
+        typd.value = new Typed(
+            typing.value, {
+                strings: msgs,
+                typeSpeed: 80,
+                backSpeed: 60,
+                loop: true
+            }
+        )
+    }
 });
 </script>
 
