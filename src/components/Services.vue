@@ -1,5 +1,8 @@
 <template>
-    <section id="services" class="main services">
+    <section 
+        id="services" class="services"
+        :class="{main: menuStore.isMenuVisible}"
+    >
         
         <div class="container" data-aos="fade-up">
             <div class="section-title">
@@ -18,6 +21,9 @@
 </template>
 
 <script setup>
+import { useMenuStore } from '@/store/menuStore';
 import projects from "@/models/projects";
 import ServiceCard from "@/components/Services/ServiceCard.vue";
+
+const menuStore = useMenuStore();
 </script>

@@ -2,7 +2,10 @@
 </script>
 
 <template>
-    <section id="about" class="main about">
+    <section id="about" 
+        class="about"
+        :class="{main: menuStore.isMenuVisible}"
+    >
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
@@ -48,6 +51,13 @@
         </div>
     </section>
 </template>
+
+<script setup>
+import { computed } from "vue";
+import { useMenuStore } from '@/store/menuStore';
+
+const menuStore = useMenuStore();
+</script>
 
 <style scoped>
 .about .content h3 {

@@ -19,3 +19,6 @@ https://ui.vuestic.dev/en/ui-elements/badge
 
 iPortfolio template
 https://bootstrapmade.com/demo/iPortfolio/
+
+vue-screen-size
+https://github.com/johndatserakis/vue-screen-size

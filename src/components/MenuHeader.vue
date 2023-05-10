@@ -28,20 +28,33 @@
 <script setup>
 import { ref, computed, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { useMenuStore } from '@/store/menuStore';
 import Profile from '@/components/Menu/Profile.vue';
 import MainMenu from '@/components/Menu/MainMenu.vue';
 
-const isMenuVisible = ref(false);
+const menuStore = useMenuStore();
+
+// const isMenuVisible = ref(false);
+
 const menuVisible = computed(() => {
-    const res = isMenuVisible.value ? 'overflow: hidden; left: 0;' : '';
+    //const res = isMenuVisible.value ? 'overflow: hidden; left: 0;' : '';
+    const res = menuStore.isMobileMenuVisible ? 'overflow: hidden; left: 0;' : '';
     return res;
 });
 
 const menuClick = (event) => {
-    isMenuVisible.value = !isMenuVisible.value;
+    // isMenuVisible.value = !isMenuVisible.value;
+    menuStore.toggleMenuVisible();
 
-    event.target.classList.toggle('bi-list')
-    event.target.classList.toggle('bi-x')
+    /*
+    const section = document.querySelector('section.content');
+    if (section != null) {
+        section.classList.toggle('main');
+    }
+    */
+
+    event.target.classList.toggle('bi-list');
+    event.target.classList.toggle('bi-x');
 };
 
 const i18n = useI18n();
@@ -70,10 +83,6 @@ watch(lang, () => {
 @media (max-width: 1199px) {
     #header {
         left: -300px;
-    }
-
-    section.main {
-        margin-left: -300px;
     }
 }
 </style>

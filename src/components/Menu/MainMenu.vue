@@ -14,15 +14,3 @@
 import mainMenu from '@/models/mainMenu';
 import MenuItem from '@/components/Menu/MenuItem.vue';
 </script>
-
-<style scoped>
-#main {
-    margin-left: 300px;
-}
-
-@media (max-width: 1199px) {
-    #main {
-        margin-left: 0;
-    }
-}
-</style>

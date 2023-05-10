@@ -1,5 +1,8 @@
 <template>
-    <section id="resume" class="main resume">
+    <section
+      id="resume" class="resume"
+      :class="{main: menuStore.isMenuVisible}"
+    >
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -64,6 +67,12 @@
       </div>
     </section>
 </template>
+
+<script setup>
+import { useMenuStore } from '@/store/menuStore';
+
+const menuStore = useMenuStore();
+</script>
 
 <style scoped>
 .resume .resume-title {

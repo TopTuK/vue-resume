@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
 import { createVuestic } from 'vuestic-ui'
+import { createPinia } from 'pinia'
 
 import messages  from '@/models/messages'
 import router from '@/router/index.js'
@@ -48,6 +49,10 @@ app.use(router);
 app.use(i18n);
 // use vuestic
 app.use(createVuestic());
+
+// create pinia
+const pinia = createPinia();
+app.use(pinia);
 
 // Mount app
 app.mount('#app');
