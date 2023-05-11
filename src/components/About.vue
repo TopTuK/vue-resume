@@ -21,7 +21,7 @@
                 <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                     <h3>{{ $t('about.profession') }}</h3>
 
-                    <p class="fst-italic">
+                    <p class="fst-italic description">
                         {{ $t('about.profession_desccription') }}
                     </p>
 
@@ -60,10 +60,18 @@ const menuStore = useMenuStore();
 </script>
 
 <style scoped>
+.about .content {
+    margin-bottom: 10px;
+}
+
 .about .content h3 {
     font-weight: 700;
     font-size: 26px;
     color: #173b6c;
+}
+
+.about .content .description {
+    margin: 10px;
 }
 
 .about .content ul {

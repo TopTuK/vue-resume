@@ -63,6 +63,14 @@ const messages = {
             nettfsclient_title: 'NetTfsClient',
             nettfsclient_description: 'Microsoft Team Foundation Server .Net Library is a client for Azure service. It can manage workitems, projects and team members.',
         },
+        contacts: {
+            title: 'Contacts',
+            location_title: 'Location 📍',
+            location: 'Moscow, Russia ❤️',
+            email_title: 'Email 📧:',
+            phone_title: 'Phone 📱:',
+            website_title: 'Website 🌐:',
+        },
     },
     ru: {
         common: {
@@ -125,6 +133,14 @@ const messages = {
             pytfsclient_description: 'Python библиотека для взаимодействия с Azure/TFS сервисом',
             nettfsclient_title: 'NetTfsClient',
             nettfsclient_description: '.Net (Core) клиент для взаимодейтсвия с Azure/TFS сервисом',
+        },
+        contacts: {
+            title: 'Контакты',
+            location_title: 'Адрес 📍',
+            location: 'г. Москва, Россия ❤️',
+            email_title: 'Email 📧:',
+            phone_title: 'Телефон 📱:',
+            website_title: 'Сайт 🌐:',
         },
     },
 };
