@@ -7,21 +7,81 @@
 
             <div class="section-title">
                 <h2>{{ $t('talents.title') }}</h2>
-                <p>{{ $t('talents.description') }}</p>
+                <p class="fst-italic">{{ $t('talents.description') }}</p>
             </div>
 
-            <div class="row">
+            <div class="row no-gutters">
                 <div class="col-lg-4">
                     <img src="@/assets/images/talents_skills.png" class="img-fluid" alt="">
                 </div>
 
-                <div class="col-lg-8 pt-4 pt-lg-0 content">
-                    <h3>{{ $t('talents.subtitle') }}</h3>
+                <div class="col-lg-8 pt-4 pt-lg-0 content">                    
+                    <blockquote class="blockquote">
+                        <p class="fst-italic">{{ $t('talents.project_title') }}</p>
+                    </blockquote>
 
-                    <p class="fst-italic">
-                        {{ $t('talents.project_title') }}
+                    <p>
+                        {{ $t('talents.talents_description') }}
                     </p>
 
+                </div>
+            </div>
+
+            <div class="section-title">
+                <h2>{{ $t('talents.talents_title') }}</h2>
+            </div>
+
+            <div class="row skills">
+                <div class="flex flex-col talent-title">
+                    <h1 class="subtitle">{{ $t('talents.hardskills_title') }}</h1>
+                    
+                    <p style="margin-top: 10px; margin-bottom: 10px;">
+                        {{ $t('talents.talents_subtitle') }}: {{ $t('talents.hybrid_title') }}; {{ $t('talents.agile_title') }}.
+                    </p>
+                    
+                    <p>{{ $t('talents.talents_footer') }}</p>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up">
+                    <SkillProgress
+                        v-for="skill in skills.slice(0, 3)"
+                        :skill="skill"
+                    />
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <SkillProgress
+                        v-for="skill in skills.slice(3, 5)"
+                        :skill="skill"
+                    />
+                </div>
+
+                <div class="flex flex-col talent-title">
+                    <h1 class="subtitle">{{ $t('talents.softskills_title') }}</h1>
+                </div>
+
+                <div class="flex flex-col">
+                    <p>
+                        {{ $t('talents.communication_skills') }}
+                    </p>
+
+                    <ul class="list-group list-mygroup" data-aos="fade-up">
+                        <li class="list-group-item">{{ $t('talents.communication_skill_1') }}</li>
+                        <li class="list-group-item">{{ $t('talents.communication_skill_2') }}</li>
+                        <li class="list-group-item">{{ $t('talents.communication_skill_3') }}</li>
+                        <li class="list-group-item">{{ $t('talents.communication_skill_4') }}</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col talent-title">
+                    <h1 class="subtitle">{{ $t('talents.businessskills_title') }}</h1>
+                </div>
+
+                <div class="flex flex-col">
+                    <p>
+                        {{ $t('talents.businessskills_description') }}
+                    </p>
+                    <img src="@/assets/images/business_skills.png" alt="" />
                 </div>
             </div>
 
@@ -31,168 +91,65 @@
 
 <script setup>
 import { useMenuStore } from '@/store/menuStore';
+import SkillProgress from "@/components/Talents/SkillProgress.vue";
+import skills from "@/models/skillsList";
 
 const menuStore = useMenuStore();
 </script>
 
 <style scoped>
-.portfolio .portfolio-item {
-    margin-bottom: 30px;
-}
-.portfolio #portfolio-flters {
-    padding: 0;
-    margin: 0 auto 35px auto;
-    list-style: none;
-    text-align: center;
-    background: #fff;
-    border-radius: 50px;
-    padding: 2px 15px;
+.talents {
+    padding: 15px;
 }
 
-.portfolio #portfolio-flters li {
-    cursor: pointer;
-    display: inline-block;
-    padding: 10px 15px 8px 15px;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1;
-    text-transform: uppercase;
-    color: #272829;
-    margin-bottom: 5px;
-    transition: all 0.3s ease-in-out;
-}
-
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
-    color: #149ddd;
-}
-
-.portfolio #portfolio-flters li:last-child {
-    margin-right: 0;
-}
-
-.portfolio .portfolio-wrap {
-    transition: 0.3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.portfolio .portfolio-wrap::before {
-    content: "";
-    background: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    transition: all ease-in-out 0.3s;
-    z-index: 2;
-    opacity: 0;
-}
-
-.portfolio .portfolio-wrap .portfolio-links {
-    opacity: 1;
-    left: 0;
-    right: 0;
-    bottom: -60px;
-    z-index: 3;
-    position: absolute;
-    transition: all ease-in-out 0.3s;
-    display: flex;
-    justify-content: center;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a {
-    color: #fff;
-    font-size: 28px;
-    text-align: center;
-    background: rgba(20, 157, 221, 0.75);
-    transition: 0.3s;
-    width: 50%;
-}
-
-.portfolio .portfolio-wrap .portfolio-links a:hover {
-    background: rgba(20, 157, 221, 0.95);
-}
-
-.portfolio .portfolio-wrap .portfolio-links a+a {
-    border-left: 1px solid #37b3ed;
-}
-
-.portfolio .portfolio-wrap:hover::before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 1;
-}
-
-.portfolio .portfolio-wrap:hover .portfolio-links {
-    opacity: 1;
-    bottom: 0;
-}
-
-/* Portfolio Details */
-.portfolio-details {
-    padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-    width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #fff;
-    opacity: 1;
-    border: 1px solid #149ddd;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #149ddd;
-}
-
-.portfolio-details .portfolio-info {
-    padding: 30px;
-    box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-    list-style: none;
-    padding: 0;
-    font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
+.talent-title {
     margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-    padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-    font-size: 26px;
-    font-weight: 700;
     margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
-    padding: 0;
+.talent-title .subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    position: relative;
+    color: #173b6c;
+}
+
+.list-mygroup {
+    margin: 10px;
+}
+
+.skills .progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.skills .progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.skills .progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+  background: #dce8f8;
+  height: 10px;
+}
+
+.skills .progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #149ddd;
 }
 </style>

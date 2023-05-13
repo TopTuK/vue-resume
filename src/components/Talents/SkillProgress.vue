@@ -1,0 +1,53 @@
+<template>
+    <div class="progress">
+        <span class="skill">{{ $t('talents.' + props.skill.title) }} <i class="val">{{ props.skill.val }}%</i></span>
+        <div class="progress-bar-wrap">
+            <va-progress-bar :model-value="props.skill.val"/>
+        </div>
+    </div>
+</template>
+
+<script setup>
+const props = defineProps({
+    skill: {
+        type: Object,
+        required: true,
+    },
+});
+</script>
+
+<style>
+.progress {
+  height: 60px;
+  display: block;
+  background: none;
+  border-radius: 0;
+}
+
+.progress .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+}
+
+.progress-bar-wrap {
+  background: #dce8f8;
+  height: 10px;
+}
+
+.progress-bar {
+  width: 1px;
+  height: 10px;
+  transition: 0.9s;
+  background-color: #149ddd;
+}
+</style>

@@ -9,11 +9,9 @@
           <h2>{{ $t('contacts.title') }}</h2>
         </div>
 
-        <div class="row mt-1">
-
-          <div class="">
-            <div class="info">
-
+        <div class="info">
+          <div class="row mt-1">
+            <div class="col-lg-6">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>{{ $t('contacts.location_title') }}</h4>
@@ -25,7 +23,9 @@
                 <h4>{{ $t('contacts.email_title') }}</h4>
                 <p>{{ $t('common.email') }}</p>
               </div>
+            </div>
 
+            <div class="col-lg-6">
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>{{ $t('contacts.phone_title') }}</h4>
@@ -37,12 +37,9 @@
                 <h4>{{ $t('contacts.website_title') }}</h4>
                 <p>{{ $t('common.website') }}</p>
               </div>
-
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
 </template>

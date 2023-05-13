@@ -43,9 +43,9 @@
                         </div>
                     </div>
 
-                    <p>
+                    <!--<p>
                         {{ $t('about.talents') }}
-                    </p>
+                    </p>-->
                 </div>
             </div>
         </div>
