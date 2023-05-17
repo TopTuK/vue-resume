@@ -22,3 +22,6 @@ https://bootstrapmade.com/demo/iPortfolio/
 
 vue-screen-size
 https://github.com/johndatserakis/vue-screen-size
+
+pillar resume template
+https://github.com/xriley/pillar-theme
