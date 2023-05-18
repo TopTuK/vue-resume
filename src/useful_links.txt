@@ -25,3 +25,6 @@ https://github.com/johndatserakis/vue-screen-size
 
 pillar resume template
 https://github.com/xriley/pillar-theme
+
+Generate a PDF from HTML with Vue.js
+https://pspdfkit.com/blog/2022/how-to-generate-a-pdf-with-vuejs/

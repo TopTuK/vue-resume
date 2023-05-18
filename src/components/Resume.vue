@@ -3,7 +3,7 @@
       id="resume" class="resume"
       :class="{main: menuStore.isMenuVisible}"
     >
-        <article class="text-center position-relative">
+        <article id="resume" class="text-center position-relative">
             <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
                 <ResumeHeader />
 
@@ -17,7 +17,7 @@
                     </div>
 
                     <div class="col-lg-3">
-
+                      <ResumeSkills />
                     </div>
                 </div>
             </div>
@@ -30,6 +30,7 @@ import { useMenuStore } from '@/store/menuStore';
 import ResumeHeader from '@/components/Resume/ResumeHeader.vue';
 import ResumeSummary from '@/components/Resume/ResumeSummary.vue';
 import ResumeExpirience from '@/components/Resume/ResumeExpirience.vue';
+import ResumeSkills from '@/components/Resume/ResumeSkills.vue';
 
 const menuStore = useMenuStore();
 </script>
