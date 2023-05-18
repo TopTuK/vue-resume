@@ -20,12 +20,12 @@
                             <li><a class="text-link" href="#"><i class="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i>0123 456 78900</a></li>
                         </ul>
 
-                        <div class="mt-4">
-                            <va-button @click="exportToPdf">Export to PDF</va-button>
+                        <div class="mt-4" data-html2canvas-ignore="true">
+                            <va-button @click="exportToPdf">Download PDF</va-button>
                         </div>
                     </div>
 
-                    <div class="secondary-info col-auto mt-5 me-5">
+                    <div class="secondary-info col-auto mt-5 me-5" data-html2canvas-ignore="true">
                         <ul class="resume-social list-unstyled">
                             <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/stevedoe</a></li>
                             <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-github-alt fa-fw"></i></span>github.com/username</a></li>
@@ -41,11 +41,14 @@
 </template>
 
 <script setup>
+import { useMenuStore } from '@/store/menuStore';
 import html2pdf from "html2pdf.js";
+
+const menuStore = useMenuStore();
 
 const exportToPdf = (event) => {
     html2pdf(document.getElementById("resume"), {
-        margin: 1,
+        margin: menuStore.isMenuVisible ? [1, -78, 1, 1] : 1,
         filename: "my_resume.pdf",
     });
 }

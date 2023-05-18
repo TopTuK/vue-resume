@@ -4,7 +4,7 @@
         
         <div class="resume-section-content">
 
-            <div class="resume-skill-item">
+            <div>
                 <ul class="list-unstyled mb-4">
                     <ResumeTalent
                         v-for="skill in skills"
@@ -13,7 +13,7 @@
                 </ul>
             </div>
             
-            <div class="resume-skill-item">
+            <div>
                 <h4 class="resume-skills-cat font-weight-bold">Others</h4>
                 <ul class="list-inline">
                     <li class="list-inline-item"><span class="badge badge-light">DevOps</span></li>
@@ -37,4 +37,17 @@ import skills from '@/models/skillsList.js';
 </script>
 
 <style scoped>
+.resume-skills-cat {
+    font-size: 1rem;
+    color: #434E5E;
+}
+
+.list-inline-item {
+    display: inline-block;
+}
+
+.badge-light {
+    color: #58677c;
+    background: #F7F8FA;
+}
 </style>

@@ -16,5 +16,17 @@ const props = defineProps({
 });
 </script>
 
-<style>
+<style scoped>
+.resume-skill-name {
+    font-size: 0.8125rem;
+    color: #434E5E;
+}
+
+.progress {
+    vertical-align: baseline;
+}
+
+.resume-progress {
+    height: 0.6rem;
+}
 </style>
