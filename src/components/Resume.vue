@@ -7,13 +7,13 @@
             <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
                 <ResumeHeader />
 
-                <div class="p-5">
+                <div class="p-4">
                     <ResumeSummary />
                 </div>
                 
                 <div class="row">
                     <div class="col-lg-9">
-                      <ResumeExpirience />
+                      <ResumeExperience />
                     </div>
 
                     <div class="col-lg-3">
@@ -29,7 +29,7 @@
 import { useMenuStore } from '@/store/menuStore';
 import ResumeHeader from '@/components/Resume/ResumeHeader.vue';
 import ResumeSummary from '@/components/Resume/ResumeSummary.vue';
-import ResumeExpirience from '@/components/Resume/ResumeExpirience.vue';
+import ResumeExperience from '@/components/Resume/ResumeExperience.vue';
 import ResumeSkills from '@/components/Resume/ResumeSkills.vue';
 
 const menuStore = useMenuStore();

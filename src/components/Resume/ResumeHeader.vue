@@ -9,28 +9,29 @@
             <div class="col">
                 <div class="row p-2 justify-content-center justify-content-md-between">
                     <div class="col-auto">
-                        <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">
-                            Sergey Sidorov
+                        <h1 class="name mt-0 mb-1 text-white text-uppercase">
+                            {{ $t('common.name') }}
                         </h1>
 
-                        <div class="title mb-3">Project Manager</div>
+                        <div class="title mb-3">{{ $t('resume.work_title') }}</div>
 
-                        <ul class="list-unstyled list-info">
-                            <li class="mb-2"><a class="text-link" href="#"><i class="far fa-envelope fa-fw me-2" data-fa-transform="grow-3"></i>Steve.Doe@website.com</a></li>
-                            <li><a class="text-link" href="#"><i class="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i>0123 456 78900</a></li>
+                        <ul class="list-info">
+                            <li class="mb-2"><i class="bi bi-envelope"></i> {{ $t('common.email') }}</li>
+                            <li><i class="bi bi-phone"></i>{{ $t('common.phone_number') }}</li>
                         </ul>
 
                         <div class="mt-4" data-html2canvas-ignore="true">
-                            <va-button @click="exportToPdf">Download PDF</va-button>
+                            <va-button @click="exportToPdf">
+                                {{ $t('resume.download_pdf') }}
+                            </va-button>
                         </div>
                     </div>
 
-                    <div class="secondary-info col-auto mt-5 me-5" data-html2canvas-ignore="true">
-                        <ul class="resume-social list-unstyled">
-                            <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/stevedoe</a></li>
-                            <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-github-alt fa-fw"></i></span>github.com/username</a></li>
-                            <li class="mb-3"><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fab fa-codepen fa-fw"></i></span>codepen.io/username/</a></li>
-                            <li><a class="text-link" href="#"><span class="fa-container text-center me-2"><i class="fas fa-globe"></i></span>yourwebsite.com</a></li>
+                    <div class="col-auto mt-5 me-5" data-html2canvas-ignore="true">
+                        <ul class="resume-social">
+                            <li class="mb-3"><a class="text-link" :href="$t('resume.linkedin_web')"><span class="text-center me-2"><i class="bi bi-linkedin"></i></span>{{ $t('resume.linkedin_web') }}</a></li>
+                            <li class="mb-3"><a class="text-link" :href="$t('resume.github_web')"><span class="text-center me-2"><i class="bi bi-github"></i></span>{{ $t('resume.github_web') }}</a></li>
+                            <li class="mb-3"><a class="text-link" :href="$t('resume.personal_web')"><span class="text-center me-2"><i class="bi bi-file-person"></i></span>{{ $t('resume.personal_web') }}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -55,10 +56,19 @@ const exportToPdf = (event) => {
 </script>
 
 <style scoped>
+.fa-fw {
+    text-align: center;
+    width: 1.25em; 
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+}
+
 .list-info {
     display: block;
     margin-block-start: 1em;
-
 }
 
 .pt-md-0 {
@@ -95,5 +105,23 @@ const exportToPdf = (event) => {
 
 .resume-header a:hover {
   color: white;
+}
+
+.resume-social .fa-container {
+    font-size: 1rem;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 0.125rem;
+    background: white;
+    color: #434E5E;
+}
+
+a.text-link {
+    text-decoration: none;
+}
+
+a.text-link:hover {
+    text-decoration: underline;
 }
 </style>

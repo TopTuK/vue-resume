@@ -1,6 +1,6 @@
 <template>
-    <li class="mb-2">
-        <div class="resume-skill-name mb-2">{{ props.skill.title }}</div>
+    <li class="mb-3">
+        <div class="resume-skill-name mb-2">{{ $t('talents.'+props.skill.title) }}</div>
         <div class="progress resume-progress">
             <va-progress-bar :model-value="props.skill.val"/>
         </div>

@@ -1,17 +1,20 @@
 <template>
     <section class="ms-1 mb-5 p-2">
-        <h2 class="resume-section-title text-uppercase pb-3 mb-3">Work Experience</h2>
+        <h2 class="resume-section-title text-uppercase pb-3 mb-3">{{ $t('resume.work_experience') }}</h2>
 
         <div class="resume-section-content">
             <div class="resume-timeline position-relative">
-                <ResumeTimeline />
-                <ResumeTimeline />
+                <ResumeTimeline
+                    v-for="job in jobs"
+                    :job="job"
+                />
             </div>
         </div>
     </section>
 </template>
 
 <script setup>
+import jobs from '@/models/jobList.js';
 import ResumeTimeline from '@/components/Resume/ResumeTimeline.vue';
 </script>
 
