@@ -6,10 +6,10 @@
         <div class="resume-section-content">
             <ul class="list-unstyled">
                 <li
-                    class="mb-1"
+                    class="ps-1 mb-2"
                     v-for="interest in interestsList"
                 >
-                    {{ interest }}
+                    {{ $t('interests.'+interest) }}
                 </li>
             </ul>
         </div>

@@ -1,4 +1,4 @@
 export default [
-    'Русский (Родной)',
-    'English',
-]
+    'russian',
+    'english',
+];

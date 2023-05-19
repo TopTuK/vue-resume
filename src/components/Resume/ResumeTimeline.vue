@@ -2,24 +2,24 @@
     <article class="resume-timeline-item position-relative pb-4">
         <div class="mb-1">
             <div class="d-flex flex-column flex-md-row">
-                <h3 class="resume-position-title mb-2">{{ $t('props.job.position_title') }}</h3>
-                <div class="resume-company-name ms-auto">{{ props.job.company_name }}</div>
+                <h3 class="resume-position-title mb-2">{{ $t('jobs.'+props.job.position_title) }}</h3>
+                <div class="resume-company-name ms-auto">{{ $t('jobs.'+props.job.company_name) }}</div>
             </div>
 
-            <div class="resume-position-time mb-3">{{ props.job.job_period }}</div>
+            <div class="resume-position-time mb-3">{{ $t('jobs.'+props.job.job_period) }}</div>
 
             <div class="resume-timeline-item-desc">
-                <p class="mb-3">{{ props.job.job_description }}</p>
+                <p class="mb-3">{{ $t('jobs.'+props.job.job_description) }}</p>
 
                 <h4 class="resume-timeline-item-desc-heading mb-2">{{ $t('resume.achievements_title') }}</h4>
 
-                <p class="mb-1">{{ props.job.achievements_title }}</p>
+                <p class="mb-1">{{ $t('jobs.'+props.job.achievements_title) }}</p>
                 <ul class="mb-3">
                     <li 
                         class="list-item"
                         v-for="achievement in props.job.achievements"
                     >
-                        {{ achievement }}
+                        {{ $t('jobs.'+achievement) }}
                     </li>
 
                 </ul>
@@ -30,7 +30,7 @@
                         class="list-inline-item"
                         v-for="tag in props.job.tags"
                     >
-                        <span class="badge bg-secondary badge-pill">{{ tag }}</span>
+                        <span class="badge bg-secondary badge-pill">{{ $t('jobs.'+tag) }}</span>
                     </li>
                 </ul>
             </div>

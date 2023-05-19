@@ -11,7 +11,7 @@
                     v-for="lang in languagesList"
                 >
                     <i class="resume-lang-icon bi bi-translate position-absolute"></i>
-                    <div class="resume-lang font-weight-bold pt-2">{{ lang }}</div>
+                    <div class="resume-lang font-weight-bold pt-2">{{ $t('languages.'+lang) }}</div>
                 </li>
             </ul>
         </div>

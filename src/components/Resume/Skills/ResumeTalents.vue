@@ -15,13 +15,13 @@
                 </ul>
             </div>
             
-            <div>
+            <div class="mt-1">
                 <ul class="list-inline">
                     <li
                         v-for="skill in additionalSkillsList"
                         class="list-inline-item"
                     >
-                        <span class="badge badge-light">{{ skill }}</span>
+                        <span class="badge badge-light">{{ $t('skills.'+skill) }}</span>
                     </li>
                 </ul>
             </div>

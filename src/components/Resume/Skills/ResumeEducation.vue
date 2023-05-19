@@ -11,9 +11,9 @@
                     v-for="education in educationList"
                 >
                     <i class="resume-degree-icon bi bi-mortarboard position-absolute"></i>
-                    <div class="resume-degree font-weight-bold mb-2">{{ education.name }}</div>
-                    <div class="resume-degree-org mb-1">{{ education.title }}</div>
-                    <div class="resume-degree-time mb-1">{{ education.period }}</div>
+                    <div class="resume-degree font-weight-bold mb-2">{{ $t('education.'+education.name) }}</div>
+                    <div class="resume-degree-org mb-1">{{ $t('education.'+education.title) }}</div>
+                    <div class="resume-degree-time mb-1">{{ $t('education.'+education.period) }}</div>
                 </li>
             </ul>
         </div>

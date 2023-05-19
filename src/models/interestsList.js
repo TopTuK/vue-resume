@@ -1,5 +1,10 @@
 export default [
     'project_managment',
-    'developing',
+    'product_managment',
+    'development',
+    'system_analysis',
     'neural_networks',
+    'teambuilding',
+    'bass_guitar',
+    'ski',
 ];
