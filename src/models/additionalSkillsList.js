@@ -8,4 +8,13 @@ export default [
     'lean',
     'analysis',
     'uml',
+
+    'architecture',
+    'csharp',
+    'python',
+    'flutter',
+    'dart',
+    'neural_network',
+    'docker',
+    'kubernetes',
 ]

@@ -12,13 +12,17 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col-lg-9">
+                    <div class="col-lg-8">
                       <ResumeExperience />
                     </div>
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                       <ResumeSkills />
                     </div>
+                </div>
+
+                <div class="p-4">
+                    <ResumeFooter />
                 </div>
             </div>
         </article>
@@ -31,6 +35,7 @@ import ResumeHeader from '@/components/Resume/ResumeHeader.vue';
 import ResumeSummary from '@/components/Resume/ResumeSummary.vue';
 import ResumeExperience from '@/components/Resume/ResumeExperience.vue';
 import ResumeSkills from '@/components/Resume/ResumeSkills.vue';
+import ResumeFooter from '@/components/Resume/ResumeFooter.vue';
 
 const menuStore = useMenuStore();
 </script>
