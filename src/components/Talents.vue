@@ -6,7 +6,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>{{ $t('talents.title') }}</h2>
+                <h2>{{ $t('talents.talents_title') }}</h2>
                 <p class="fst-italic">{{ $t('talents.description') }}</p>
             </div>
 
@@ -17,18 +17,14 @@
 
                 <div class="col-lg-8 pt-4 pt-lg-0 content">                    
                     <blockquote class="blockquote">
-                        <p class="fst-italic">{{ $t('talents.project_title') }}</p>
+                        <p class="fst-italic">{{ $t('talents.talents_description') }}</p>
                     </blockquote>
 
                     <p>
-                        {{ $t('talents.talents_description') }}
+                        {{ $t('talents.project_title') }}
                     </p>
 
                 </div>
-            </div>
-
-            <div class="section-title">
-                <h2>{{ $t('talents.talents_title') }}</h2>
             </div>
 
             <div class="row skills">

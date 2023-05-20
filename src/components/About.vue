@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
     <section id="about" 
         class="about"
@@ -42,19 +39,21 @@
                             </ul>
                         </div>
                     </div>
-
-                    <!--<p>
-                        {{ $t('about.talents') }}
-                    </p>-->
                 </div>
             </div>
+        </div>
+
+        <div class="mb-3">
+            <VolunteerActivity />
+            <Hobby />
         </div>
     </section>
 </template>
 
 <script setup>
-import { computed } from "vue";
 import { useMenuStore } from '@/store/menuStore';
+import VolunteerActivity from '@/components/About/VolunteerActivity.vue';
+import Hobby from '@/components/About/Hobby.vue';
 
 const menuStore = useMenuStore();
 </script>
