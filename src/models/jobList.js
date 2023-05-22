@@ -9,11 +9,16 @@ export default [
             'analyst_group_manager_achievement1',
             'analyst_group_manager_achievement2',
             'analyst_group_manager_achievement3',
+            'analyst_group_manager_achievement4',
+            'analyst_group_manager_achievement5',
+            'analyst_group_manager_achievement6',
         ],
         tags: [
             'analyst_group_manager_tag1',
             'analyst_group_manager_tag2',
             'analyst_group_manager_tag3',
+            'analyst_group_manager_tag4',
+            'analyst_group_manager_tag5',
         ],
     },
     {
@@ -26,11 +31,15 @@ export default [
             'analyst_team_lead_achievement1',
             'analyst_team_lead_achievement2',
             'analyst_team_lead_achievement3',
+            'analyst_team_lead_achievement4',
+            'analyst_team_lead_achievement5',
+            'analyst_team_lead_achievement6',
         ],
         tags: [
             'analyst_team_lead_tag1',
             'analyst_team_lead_tag2',
             'analyst_team_lead_tag3',
+            'analyst_team_lead_tag4',
         ],
     },
     {
@@ -98,7 +107,6 @@ export default [
         tags: [
             'oviont_tag1',
             'oviont_tag2',
-            'oviont_tag3',
         ],
     },
 ];

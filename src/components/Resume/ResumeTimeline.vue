@@ -11,7 +11,7 @@
             <div class="resume-timeline-item-desc">
                 <p class="mb-3">{{ $t('jobs.'+props.job.job_description) }}</p>
 
-                <h4 class="resume-timeline-item-desc-heading mb-2">{{ $t('resume.achievements_title') }}</h4>
+                <h4 class="resume-timeline-item-desc-heading mb-2 text-uppercase">{{ $t('resume.achievements_title') }}</h4>
 
                 <p class="mb-1">{{ $t('jobs.'+props.job.achievements_title) }}</p>
                 <ul class="mb-3">
@@ -27,7 +27,7 @@
                 <h4 class="resume-timeline-item-desc-heading mb-1">{{ $t('resume.tags_title') }}</h4>
                 <ul class="list-inline">
                     <li 
-                        class="list-inline-item"
+                        class="list-inline-item m-1"
                         v-for="tag in props.job.tags"
                     >
                         <span class="badge bg-secondary badge-pill">{{ $t('jobs.'+tag) }}</span>
