@@ -12,6 +12,7 @@ export default [
             'analyst_group_manager_achievement4',
             'analyst_group_manager_achievement5',
             'analyst_group_manager_achievement6',
+            'analyst_group_manager_achievement7',
         ],
         tags: [
             'analyst_group_manager_tag1',
@@ -67,8 +68,8 @@ export default [
         achievements_title: 'system_analyst_achievements',
         achievements: [
             'system_analyst_achievement1',
-            'system_analyst_achievement1',
-            'system_analyst_achievement1',
+            'system_analyst_achievement2',
+            'system_analyst_achievement3',
         ],
         tags: [
             'system_analyst_tag1',
@@ -102,7 +103,6 @@ export default [
         achievements: [
             'oviont_achievement1',
             'oviont_achievement2',
-            'oviont_achievement3',
         ],
         tags: [
             'oviont_tag1',
