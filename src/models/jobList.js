@@ -12,7 +12,6 @@ export default [
             'analyst_group_manager_achievement4',
             'analyst_group_manager_achievement5',
             'analyst_group_manager_achievement6',
-            'analyst_group_manager_achievement7',
         ],
         tags: [
             'analyst_group_manager_tag1',
@@ -41,6 +40,7 @@ export default [
             'analyst_team_lead_tag2',
             'analyst_team_lead_tag3',
             'analyst_team_lead_tag4',
+            'analyst_team_lead_tag5',
         ],
     },
     {
@@ -103,6 +103,7 @@ export default [
         achievements: [
             'oviont_achievement1',
             'oviont_achievement2',
+            'oviont_achievement3',
         ],
         tags: [
             'oviont_tag1',
