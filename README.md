@@ -7,11 +7,9 @@
     </a>
 </h1>
 
-<p align="center">
-    <h4>
-        Build fast :rocket: and easy multilanguage beautiful resume :necktie: and create your best CV :briefcase: ever!
-        <br>
-        Made with Vue and Vite
-    </h4>
-</p>
+<h4 align="center">
+    Build fast :rocket: and easy multilanguage beautiful resume :necktie: and create your best CV :briefcase: ever!
+    <br>
+    Made with Vue and Vite
+</h4>
   
