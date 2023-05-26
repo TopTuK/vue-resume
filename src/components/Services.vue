@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { useMenuStore } from '@/store/menuStore';
+import { useMenuStore } from "@/store/menuStore";
 import projects from "@/models/projects";
 import ServiceCard from "@/components/Services/ServiceCard.vue";
 

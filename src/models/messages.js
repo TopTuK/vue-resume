@@ -6,7 +6,7 @@ const messages = {
             name: "Sergey Sidorov",
             phone_number: '+7 916 4857574',
             website: 'https://pmi.moscow',
-            email: 'sergey.sidorov@pmi.moscow',
+            email: "sergey.sidorov{'@'}pmi.moscow",
             age: '34',
         },
         menu: {
@@ -245,7 +245,7 @@ const messages = {
             name: "Сергей Сидоров",
             phone_number: '+7 916 4857574',
             website: 'https://pmi.moscow',
-            email: 'sergey.sidorov@pmi.moscow',
+            email: "sergey.sidorov{'@'}pmi.moscow",
             age: '34',
         },
         menu: {

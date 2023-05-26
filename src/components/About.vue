@@ -51,9 +51,9 @@
 </template>
 
 <script setup>
-import { useMenuStore } from '@/store/menuStore';
-import VolunteerActivity from '@/components/About/VolunteerActivity.vue';
-import Hobby from '@/components/About/Hobby.vue';
+import { useMenuStore } from "@/store/menuStore";
+import VolunteerActivity from "@/components/About/VolunteerActivity.vue";
+import Hobby from "@/components/About/Hobby.vue";
 
 const menuStore = useMenuStore();
 </script>

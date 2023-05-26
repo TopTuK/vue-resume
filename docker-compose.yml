@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: s-sidorov-site
+    restart: always
+    ports:
+      - 80:80
+
+    # expose:
+      # - "80"
+      # - "443"
+    # environment:
+      # - VIRTUAL_HOST=s-sidorov.ru,www.s-sidorov.ru
+      # - VIRTUAL_PORT=443
+      # - VIRTUAL_PROTO=https
+
+networks:
+  default:
+    name: pmi_network
