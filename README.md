@@ -2,7 +2,6 @@
     <p>
         My Vue Resume (best personal CV)
     </p>
-
     <a href="https://github.com/TopTuK/vue-resume">
         <img src="./readme_icon.png" alt="Markdownify" width="200">
     </a>
