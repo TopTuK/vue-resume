@@ -1,24 +1,24 @@
 <template>
-    <section class="ms-3" data-aos="fade-up">
+    <section data-aos="fade-up">
         <div class="flex flex-col subsection-title mb-2">
             <h1 class="subtitle text-uppercase">{{ $t('volunteer.section_title') }}</h1>
         </div>
 
-        <ul class="list-group">
-            <li class="list-group-item">
-                {{ $t('volunteer.volunteer1') }}
+        <ul class="gr-list">
+            <li>
+                <i class="bi bi-chevron-right"></i> {{ $t('volunteer.volunteer1') }}
             </li>
-            <li class="list-group-item">
-                {{ $t('volunteer.volunteer2') }}
+            <li>
+                <i class="bi bi-chevron-right"></i> {{ $t('volunteer.volunteer2') }}
             </li>
-            <li class="list-group-item">
-                {{ $t('volunteer.volunteer3') }}
+            <li>
+                <i class="bi bi-chevron-right"></i> {{ $t('volunteer.volunteer3') }}
             </li>
-            <li class="list-group-item">
-                {{ $t('volunteer.volunteer4') }}
+            <li>
+                <i class="bi bi-chevron-right"></i> {{ $t('volunteer.volunteer4') }}
             </li>
-            <li class="list-group-item">
-                {{ $t('volunteer.volunteer5') }}
+            <li>
+                <i class="bi bi-chevron-right"></i> {{ $t('volunteer.volunteer5') }}
             </li>
         </ul>
     </section>
@@ -37,5 +37,14 @@
     font-weight: bold;
     position: relative;
     color: #173b6c;
+}
+
+.gr-list {
+    margin-left: 0;
+    padding-right: 0;
+}
+
+ul.gr-list li {
+    margin: 5px;
 }
 </style>

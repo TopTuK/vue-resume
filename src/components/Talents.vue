@@ -1,6 +1,7 @@
 <template>
     <section
-        id="talents" class="talents"
+        id="talents"
+        class="talents section-content"
         :class="{main: menuStore.isMenuVisible}"
     >
         <div class="container" data-aos="fade-up">
@@ -10,15 +11,15 @@
                 <p class="fst-italic">{{ $t('talents.description') }}</p>
             </div>
 
-            <div class="row no-gutters">
+            <div class="row no-gutters d-flex align-items-center justify-content-center">
                 <div class="col-lg-4">
                     <img src="@/assets/images/talents_skills.png" class="img-fluid" alt="">
                 </div>
 
                 <div class="col-lg-8 pt-4 pt-lg-0 content">                    
-                    <blockquote class="blockquote">
-                        <p class="fst-italic">{{ $t('talents.talents_description') }}</p>
-                    </blockquote>
+                    <p class="mb-2">
+                        {{ $t('talents.talents_description') }}
+                    </p>
 
                     <p>
                         {{ $t('talents.project_title') }}
@@ -61,11 +62,19 @@
                         {{ $t('talents.communication_skills') }}
                     </p>
 
-                    <ul class="list-group list-mygroup" data-aos="fade-up">
-                        <li class="list-group-item">{{ $t('talents.communication_skill_1') }}</li>
-                        <li class="list-group-item">{{ $t('talents.communication_skill_2') }}</li>
-                        <li class="list-group-item">{{ $t('talents.communication_skill_3') }}</li>
-                        <li class="list-group-item">{{ $t('talents.communication_skill_4') }}</li>
+                    <ul class="gr-list" data-aos="fade-up">
+                        <li>
+                            <i class="bi bi-chevron-right"></i> {{ $t('talents.communication_skill_1') }}
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-chevron-right"></i> {{ $t('talents.communication_skill_2') }}
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-chevron-right"></i> {{ $t('talents.communication_skill_3') }}
+                        </li>
+                        <li class="list-group-item">
+                            <i class="bi bi-chevron-right"></i> {{ $t('talents.communication_skill_4') }}
+                        </li>
                     </ul>
                 </div>
 
@@ -77,7 +86,9 @@
                     <p>
                         {{ $t('talents.businessskills_description') }}
                     </p>
-                    <img src="@/assets/images/business_skills.png" alt="" />
+                    <div class="p-1 d-flex align-items-center justify-content-center">
+                        <img src="@/assets/images/business_skills.png" alt="" />
+                    </div>
                 </div>
             </div>
 
@@ -100,7 +111,7 @@ const menuStore = useMenuStore();
 
 .talent-title {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .talent-title .subtitle {
@@ -147,5 +158,14 @@ const menuStore = useMenuStore();
   height: 10px;
   transition: 0.9s;
   background-color: #149ddd;
+}
+
+.gr-list {
+    margin-left: 0;
+    padding-right: 0;
+}
+
+ul.gr-list li {
+    margin: 5px;
 }
 </style>

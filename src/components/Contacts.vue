@@ -1,6 +1,7 @@
 <template>
     <section
-      id="contact" class="contact"
+      id="contact"
+      class="contact section-content"
       :class="{main: menuStore.isMenuVisible}"
     >
       <div class="container" data-aos="fade-up">

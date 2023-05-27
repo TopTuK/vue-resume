@@ -1,6 +1,7 @@
 <template>
     <section 
-        id="services" class="services"
+        id="services"
+        class="services section-content"
         :class="{main: menuStore.isMenuVisible}"
     >
         
