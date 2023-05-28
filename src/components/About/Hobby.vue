@@ -6,49 +6,49 @@
 
         <div class="flex flex-col">
             <p class="p-title">
-                Подходы и методология управления проектами. Разработка ПО: Scrum, Lean, проектный подход.
+                {{ $t('hobby.hobby_title1') }}
             </p>
             
             <p class="m-2">
                 <blockquote class="mb-2">
                     <p class="fst-italic">
-                        Для руководства нужны сердце, нутро, душа и нюх. Так что:
+                        {{ $t('hobby.roman_title') }}
                     </p>
 
                     <ul class="fst-italic">
-                        <li>- руководить надо сердцем;</li>
-                        <li>- чувствовать нутром;</li>
-                        <li>- вкладывать в команду и проект душу;</li>
-                        <li>- иметь нюх на всякую ерунду и бессмыслицу.></li>
+                        <li>{{ $t('hobby.roman_1') }}</li>
+                        <li>{{ $t('hobby.roman_2') }}</li>
+                        <li>{{ $t('hobby.roman_3') }}</li>
+                        <li>{{ $t('hobby.roman_4') }}</li>
                     </ul>
                     
                     <p class="fst-italic">
-                        Главнокомандующий на поле битвы, как метафора управления проектами. К началу сражения работа главнокомандующего уже закончена.
+                        {{ $t('hobby.roman_summary') }}
                     </p>
 
                     <footer>
-                        <cite>Том Демарко. Роман об управлении проектами</cite>
+                        <cite>{{ $t('hobby.roman_footer') }}</cite>
                     </footer>
                 </blockquote>
             </p>
 
             <p class="p-title">
-                Архитектура и разработка программного обеспечения.
+                {{ $t('hobby.hobby_title2') }}
             </p>
 
             <p>
                 <ul class="gr-list">
                     <li>
-                        <i class="bi bi-chevron-right"></i> Обладаю навыком и опытом разработки ПО с использованием .Net (C#), Dart, Python, JavaScript. 
+                        <i class="bi bi-chevron-right"></i> {{ $t('hobby.hobby_dev1') }}
                     </li>
                     <li>
-                        <i class="bi bi-chevron-right"></i> Имею практический опыт в создании и обучении нейросетей (NEAT,  MNIST, CNN)
+                        <i class="bi bi-chevron-right"></i> {{ $t('hobby.hobby_dev2') }}
                     </li>
                     <li>
-                        <i class="bi bi-chevron-right"></i> Понимание архитектурных паттернов разработки. Мне знакомы и не чужды такие термины и аббревиатуры, как IoC, Dependacy Injection, Closure, SOLID, Fabric Method, Service Locator, Singleton.
+                        <i class="bi bi-chevron-right"></i> {{ $t('hobby.hobby_dev3') }}
                     </li>
                     <li>
-                        <i class="bi bi-chevron-right"></i> Понимаю приципы микросервисной архитектуры. Обладаю практическим  опытом в CI/CD. Понимаю приципы DevOps: Docker, K8S.
+                        <i class="bi bi-chevron-right"></i> {{ $t('hobby.hobby_dev4') }}
                     </li>
                 </ul>
             </p>
@@ -58,7 +58,7 @@
             </div>
 
             <p class="p-title mt-2 mb-2">
-                Создал и развиваю музыкальную группу KAVёr. Играю на бас-гитаре.
+                {{ $t('hobby.hobby_title3') }}
             </p>
 
             <div class="p-1 d-flex align-items-center justify-content-center">
@@ -74,7 +74,7 @@
             </div>
 
             <p class="p-title mt-2 mb-2">
-                Занимаюсь активными видами спорта, летом на море, зимой в горах.
+                {{ $t('hobby.hobby_title4') }}
             </p>
 
             <div class="p-1 d-flex align-items-center justify-content-center">
