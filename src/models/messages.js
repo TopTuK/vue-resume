@@ -209,7 +209,7 @@ const messages = {
             russian_sapr_tag3: 'PDM Lotsia',
 
             developer: 'Developer',
-            oviont: 'Овионт',
+            oviont: 'Oviont',
             oviont_period: '06.2008 - 09.2009',
             oviont_description: 'Developed a product for a budgetary enterprise of the Moscow region.',
             oviont_achievements: '',

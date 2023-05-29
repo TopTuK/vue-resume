@@ -1,3 +1,5 @@
+// https://patents.google.com/patent/EP3674933A1/en
+
 export default [
     {
         name: 'Award Name Lorem',
