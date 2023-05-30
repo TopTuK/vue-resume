@@ -139,6 +139,22 @@ const messages = {
             footer_title: 'Additional',
             footer_dscription: 'Активно равзвиваю персональный блог (https://blog.s-sidorov.ru), сообщество проектных руководителей и членов продуктовых команд (https://pmi.moscow). Разрабатываю домашние проекты в Github (https://github.com/toptuk): реализовал различные библиотеки, утилиты, приложения и сайты с использование .net, C#, Python, Django, Flutter, Dart, Docker, Postgres, Redis, nginx. Изучаю различные способы разработки нейронных сетей и прогнозирующих моделей - алгоритм NEAT, ChatGPT, сверточные сети и др. Люблю путешествовать и публично выступать. Увлекаюсь игрой на бас гитаре в составе группы KAVёr и активными зимними видами спорта - катаюсь на горных лыжах.',
         },
+        certificates: {
+            cert_title1: 'RU 2724713 C1, EP 3674933 A1',
+            cert_description1: 'System and method of changing the password of an account record under a threat of unlawful access to user data',
+
+            cert_title2: 'Program Project',
+            cert_description2: '2020: Сертификат Stratoplan в результате завершения курса по управлению проектами',
+
+            cert_title3: 'Team Leader',
+            cert_description3: '2020: Сертификат Stratoplan в результате завершения курса по управлению командой',
+
+            cert_title4: 'Agile Requirements Analysis',
+            cert_description4: 'ScrumTec: developing products with Scrum',
+
+            cert_title5: 'SAF3 Implementation Workshop',
+            cert_description5: 'Luxsoft 2019: integration SAFe for developing programs',
+        },
         jobs: {
             analyst_group_manager: 'System Analyst Group Manager',
             kaspersky: 'Kaspersky Lab',
@@ -395,6 +411,22 @@ const messages = {
             interests_title: 'Интересы',
             footer_title: 'Дополнительно',
             footer_dscription: 'Являюсь эуспертом в области управления содержания работ. Обладаю знаниями управления требованиями, UML, определения качества продукта. Активно равзвиваю персональный блог (https://blog.s-sidorov.ru), сообщество проектных руководителей и членов продуктовых команд (https://pmi.moscow). Разрабатываю домашние проекты в Github (https://github.com/toptuk): реализовал различные библиотеки, утилиты, приложения и сайты с использование .net, C#, Python, Django, Flutter, Dart, Docker, Postgres, Redis, nginx. Изучаю различные способы разработки нейронных сетей и прогнозирующих моделей - алгоритм NEAT, ChatGPT, сверточные сети и др. Люблю путешествовать и публично выступать. Увлекаюсь игрой на бас гитаре в составе группы KAVёr и активными зимними видами спорта - катаюсь на горных лыжах.',
+        },
+        certificates: {
+            cert_title1: 'RU 2724713 C1, EP 3674933 A1',
+            cert_description1: 'Патент: система и способ смены пароля учетной записи при наличии угрозы получения неправомерного доступа к данным пользователя',
+
+            cert_title2: 'Program Project',
+            cert_description2: '2020: Сертификат Stratoplan в результате завершения курса по управлению проектами',
+
+            cert_title3: 'Team Leader',
+            cert_description3: '2020: Сертификат Stratoplan в результате завершения курса по управлению командой',
+
+            cert_title4: 'Agile Requirements Analysis',
+            cert_description4: 'ScrumTec: developing products with Scrum',
+
+            cert_title5: 'SAF3 Implementation Workshop',
+            cert_description5: 'Luxsoft 2019: integration SAFe for developing programs',
         },
         jobs: {
             analyst_group_manager: 'Руководитель группы системного анализа',

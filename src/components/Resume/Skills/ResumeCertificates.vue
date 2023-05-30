@@ -11,8 +11,8 @@
                     v-for="cert in certificates"
                 >
                     <i class="resume-award-icon bi bi-trophy position-absolute"></i>
-                    <div class="resume-award-name">{{ cert.name }}</div>
-                    <div class="resume-award-desc">{{ cert.description }}</div>
+                    <div class="resume-award-name">{{ $t('certificates.' + cert.name) }}</div>
+                    <div class="resume-award-desc">{{ $t('certificates.' + cert.description) }}</div>
                 </li>
             </ul>
         </div>

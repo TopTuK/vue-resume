@@ -9,7 +9,7 @@
                     class="ps-1 mb-2"
                     v-for="interest in interestsList"
                 >
-                    {{ $t('interests.'+interest) }}
+                    <i class="bi bi-chevron-right"></i> {{ $t('interests.'+interest) }}
                 </li>
             </ul>
         </div>
