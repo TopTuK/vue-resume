@@ -1,0 +1,21 @@
+name: Manual deploy production
+
+on: workflow_dispatch
+
+jobs:
+    build:
+        name: Build and pull image
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+
+            - uses: actions/setup-node@v3
+              with:
+                node-version: '18'
+
+            - name: 🏗 Webpack build
+              run: |
+                node -v
+                npm -v
+                npm ci
+                npm tun build
