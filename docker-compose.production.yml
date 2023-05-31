@@ -7,6 +7,9 @@ services:
       dockerfile: Dockerfile
     container_name: s-sidorov-site
     restart: always
+    volumes:
+      - ./certs:/etc/ssl
+      - ./nginx.production.conf:/etc/nginx/nginx.conf
     expose:
       - "80"
       - "443"
