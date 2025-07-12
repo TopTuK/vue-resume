@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   sidorov-web:
     image: ghcr.io/toptuk/sidorov_ru:latest
@@ -18,7 +16,9 @@ services:
       - VIRTUAL_HOST=s-sidorov.ru,www.s-sidorov.ru
       - VIRTUAL_PORT=443
       - VIRTUAL_PROTO=https
+    networks:
+      - pmi_network
 
 networks:
-  default:
-    name: pmi_network
+  pmi_network:
+    external: true
