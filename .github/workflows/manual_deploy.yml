@@ -36,6 +36,6 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v3
         - run: echo "${{ secrets.PRODUCTION_SSH_KEY }}" > ${{ env.SSH_KEY_PATH }} && chmod 600 ${{ env.SSH_KEY_PATH }}
-        - run: scp -o StrictHostKeyChecking=no -i ${{ env.SSH_KEY_PATH }} docker-compose.production.yml ${{ secrets.PRODUCTION_SSH_USERNAME }}@${{ secrets.PRODUCTION_SSH_HOST }}:/root/s-sidorov/docker-compose.production.yml
-        - run: scp -o StrictHostKeyChecking=no -i ${{ env.SSH_KEY_PATH }} nginx.production.conf ${{ secrets.PRODUCTION_SSH_USERNAME }}@${{ secrets.PRODUCTION_SSH_HOST }}:/root/s-sidorov/nginx.production.conf
-        - run: ssh -i ${{ env.SSH_KEY_PATH }} ${{ secrets.PRODUCTION_SSH_USERNAME }}@${{ secrets.PRODUCTION_SSH_HOST }} "cd /root/s-sidorov && docker login ghcr.io -u $GITHUB_ACTOR -p ${{ secrets.TOKEN }} && docker pull ghcr.io/toptuk/sidorov_ru:latest && docker-compose -f docker-compose.production.yml up -d && docker system prune --all --force"
+        - run: scp -o StrictHostKeyChecking=no -i ${{ env.SSH_KEY_PATH }} docker-compose.production.yml ${{ secrets.PRODUCTION_SSH_USERNAME }}@${{ secrets.PRODUCTION_SSH_HOST }}:/home/s-admin/s-sidorov/docker-compose.production.yml
+        - run: scp -o StrictHostKeyChecking=no -i ${{ env.SSH_KEY_PATH }} nginx.production.conf ${{ secrets.PRODUCTION_SSH_USERNAME }}@${{ secrets.PRODUCTION_SSH_HOST }}:/home/s-admin/s-sidorov/nginx.production.conf
+        - run: ssh -i ${{ env.SSH_KEY_PATH }} ${{ secrets.PRODUCTION_SSH_USERNAME }}@${{ secrets.PRODUCTION_SSH_HOST }} "cd /home/s-admin/s-sidorov && docker login ghcr.io -u $GITHUB_ACTOR -p ${{ secrets.TOKEN }} && docker pull ghcr.io/toptuk/sidorov_ru:latest && docker-compose -f docker-compose.production.yml up -d && docker system prune --all --force"
